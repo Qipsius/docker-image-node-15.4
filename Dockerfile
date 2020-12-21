@@ -6,3 +6,11 @@ RUN apt-get update && apt-get install -y sudo \
     # create initial directory
     mkdir /var/www; \
     mkdir /var/www/html
+
+COPY admin /var/www/html/
+
+WORKDIR /var/www/html/admin
+
+RUN npm install --no-interaction
+
+CMD ["sleep","3600"]
