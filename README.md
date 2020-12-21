@@ -1,1 +1,1 @@
-# docker-image-node-15.4
+# docker-image-node-15.4-buster-slim
